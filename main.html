@@ -1,69 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .main{
-            width: 1100px;
-            background-color: aquamarine;
-            padding: 10px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture Webpage</title>
 
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#e8f0ec;
+}
 
+.main{
+    width:1100px;
+    margin:20px auto;
+    background:#cfdad3;
+    padding:15px;
+    border:2px solid #9aa9a0;
+}
 
-        .imageContainer{
-            width:auto;
-            height: 300px;
-        }
-        .table-image{
-            height: 200px;
-            width: 200px;
-            margin: 10px;
-        }
-        .text-1{
-            width: 600px;
-            height:auto;
-            padding: 15px;
-        }
-        
-    </style>
+/* Top Image Container */
+.imageContainer{
+    width:100%;
+    height:320px;
+    overflow:hidden;
+    border:2px solid #8f9f95;
+    margin-bottom:15px;
+}
+
+.imageContainer img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Table Styling */
+table{
+    width:1100px;
+    border-collapse:collapse;
+    background:#d7e1da;
+}
+
+td{
+    border:1px solid #8f9f95;
+    vertical-align:top;
+    padding:10px;
+}
+
+/* Fixed column widths */
+.col-img{
+    width:200px;
+}
+
+.col-text{
+    width:600px;
+}
+
+/* Images inside table */
+.table-image{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border:1px solid #7f8f86;
+    margin-bottom:8px;
+}
+
+/* Text styling */
+h2{
+    text-align:center;
+    margin-top:0;
+}
+
+p{
+    line-height:1.5;
+    font-size:14px;
+}
+</style>
 </head>
-<body>
-    <section>
-        <div class="main">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.VMxl7iEw9iQqnlz8Ga_fEQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="demon slayer" class="imageContainer">
-        
-            <table border="1">
-                <tr>
-                    <td>
-                        <img src="https://wallpapers.com/images/hd/tanjiro-kamado-demon-slayer-logo-gfuer15sqhx4f6qm.jpg" alt="tanjiro" class="table-image">
-                    </td>
-                    <td class="text-1">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita iste quasi nesciunt molestiae fugiat asperiores alias quaerat, enim delectus.</p>
-                    </td>
-                    <td>
-                        <img src="https://wallpapers.com/images/hd/tanjiro-kamado-demon-slayer-logo-gfuer15sqhx4f6qm.jpg" alt="tanjiro" class="table-image">
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                        <img src="https://wallpapers.com/images/hd/tanjiro-kamado-demon-slayer-logo-gfuer15sqhx4f6qm.jpg" alt="tanjiro" class="table-image">
-                        <p style="text-align: left;margin :5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aut vero, repudiandae eos molestiae voluptatibus, fugiat, eaque deleniti nesciunt reiciendis fuga non ab voluptates reprehenderit error id ea iusto quis?</p>
-                    </td>
-                    <td class="text-1">
-                        <center><h2>Objective</h2></center>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cupiditate a doloribus repellendus sed incidunt, modi nostrum nobis pariatur? Consectetur, id ex a esse quam maxime distinctio debitis ad vel assumenda deleniti accusamus iste maiores mollitia, incidunt error. Repellendus distinctio magnam, dolor repellat totam sint iste nihil modi quis, inventore facilis sit esse excepturi aut iusto vitae eligendi dignissimos illum animi corrupti placeat! Necessitatibus quidem perspiciatis consequuntur dolor laborum voluptatum facilis recusandae ut amet officiis vero sint quas temporibus, voluptas id, placeat atque error nihil qui ex! Eos, quaerat voluptates. Quidem neque numquam officia quia temporibus molestias suscipit explicabo?</p>
-                    </td>
-                    <td>
-                        <img src="https://wallpapers.com/images/hd/tanjiro-kamado-demon-slayer-logo-gfuer15sqhx4f6qm.jpg" alt="tanjiro" class="table-image">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam totam corrupti possimus natus qui quis id quas rerum architecto, minus eveniet sapiente quo ea aspernatur odio neque ipsam! Quis, corporis!</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
+<body>
+
+<div class="main">
+
+    <!-- Top Architecture Image -->
+    <div class="imageContainer">
+        <img src="/mnt/data/5c751d10-50b1-4ef7-887a-ee69223c7c53_Screenshot 2023-08-16 at 12.56.13 AM.png" alt="Architecture Design">
+    </div>
+
+    <!-- Architecture Table -->
+    <table>
+        <tr>
+            <td class="col-img">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="table-image">
+            </td>
+
+            <td class="col-text">
+                <h2>Modern Architecture</h2>
+                <p>
+                Modern architecture focuses on clean lines, open spaces, and functional design.
+                It uses materials such as glass, steel, and concrete to create structures that are
+                both efficient and visually strong. Natural light, geometry, and minimal decoration
+                are key characteristics of this style.
+                </p>
+            </td>
+
+            <td class="col-img">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" class="table-image">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="col-img">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625" class="table-image">
+                <p>
+                Sustainable buildings use energy-efficient materials and eco-friendly construction
+                techniques to reduce environmental impact.
+                </p>
+            </td>
+
+            <td class="col-text">
+                <h2>Architecture Planning Objective</h2>
+                <p>
+                Architectural planning balances aesthetics, safety, and usability. A good design
+                considers space utilization, ventilation, lighting, structure strength, and user
+                comfort. Floor plans, room relationships, service areas, and circulation paths must
+                be planned before construction. Proper architectural design improves functionality
+                while maintaining visual harmony across the entire structure.
+                </p>
+            </td>
+
+            <td class="col-img">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" class="table-image">
+                <p>
+                Green architecture integrates landscape, sunlight direction, and energy systems
+                into the building layout.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
 </body>
 </html>
